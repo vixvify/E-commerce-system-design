@@ -1,4 +1,4 @@
-1. Problem Statement
+##1. Problem Statement
 
 สร้างระบบเว็บไซต์ขายสินค้าออนไลน์ ที่ให้ผู้ใช้สามารถ
 - สมัครสมาชิก / ล็อกอิน
@@ -6,7 +6,7 @@
 - ใส่สินค้าในตะกร้า / ชำระเงิน
 - ฝั่งแอดมินสามารถเพิ่ม ลบ แก้ไขสินค้าได้
 
-2. Requirements Gathering	
+##2. Requirements Gathering	
 
 Manager
 Front-end
@@ -31,7 +31,7 @@ Customer
 Admin
 - Admin Service — dashboard, product management
 
-3. Architecture Overview
+##3. Architecture Overview
 
 - Frontend -> React/Next.js
 - Backend -> Node.js (Express.js)
@@ -40,7 +40,7 @@ Admin
 - Authentication -> JWT
 - Cloud -> AWS 
 
-4. System Flow
+##4. System Flow
 
 เข้าสู่ระบบด้วย Account ที่สมัคร
 1. ลูกค้าเข้าสู่เว็บไซต์ E-commerce
@@ -76,8 +76,8 @@ Admin
 28. ระบบอัพเดตสถานะคำสั่งซื้อเป็น "จัดส่งสำเร็จ" (PUT/updateStatus)
 29. ลูกค้าเขียนรีวิวและให้คะแนนสินค้า (POST/createReview)
 
-5. Database Design
-6. Component Design
+##5. Database Design
+##6. Component Design
 
 Auth Service
 
@@ -93,13 +93,13 @@ Order Service
 
 - ตรวจสอบสต็อก → คำนวณยอดรวม → เชื่อม Payment Gateway
 
-7. Scalability & Reliability
+##7. Scalability & Reliability
 
 - Load Balancer: กระจายโหลดระหว่างหลาย server
 - Cache (Redis): เก็บ product ที่ถูกเรียกบ่อยเพื่อลด query DB
 - CDN: ให้ static assets โหลดเร็วทั่วโลก
 
-8. Security
+##8. Security
 
 - ใช้ HTTPS 
 - รหัสผ่านเก็บด้วย bcrypt hashing
@@ -107,4 +107,4 @@ Order Service
 - ตั้งค่า Rate Limiting และ Input Validation
 - ใช้ HttpOnly + Secure Cookie สำหรับ session 
 
-9. Trade-offs
+##9. Trade-offs
