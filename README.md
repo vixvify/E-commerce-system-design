@@ -8,7 +8,6 @@
 
 ##2. Requirements Gathering	
 
-Manager
 Front-end
 UI, product, cart, checkout, user profile
 
@@ -18,8 +17,6 @@ Backend Services
 แยก services แต่ละประเภท
 
 - Catalog Service — จัดการสินค้า, category
-
-Customer
 - Search Service — full-text / keyword search
 - Comment Service - reviews, comment
 - Cart Service — cart, pricing, discounts
@@ -27,8 +24,6 @@ Customer
 - Payment Service — payment gateway 
 - User / Auth Service — user profile, auth, token
 - Notification Service — email/SMS
-
-Admin
 - Admin Service — dashboard, product management
 
 ##3. Architecture Overview
@@ -42,12 +37,12 @@ Admin
 
 ##4. System Flow
 
-เข้าสู่ระบบด้วย Account ที่สมัคร
+-เข้าสู่ระบบด้วย Account ที่สมัคร
 1. ลูกค้าเข้าสู่เว็บไซต์ E-commerce
 2. ลูกค้าสร้างบัญชีใหม่ (POST/createUser)
 3. ลูกค้าเข้าสู่ระบบด้วย Account ที่สร้าง (POST/login) -> ไปข้อที่ 8
 
-เข้าสู่ระบบด้วย Email OTP
+-เข้าสู่ระบบด้วย Email OTP
 4. ลูกค้าเข้าสู่เว็บไซต์ E-commerce
 5. ลูกค้ากรอก Email เพื่อยืนยันตัวตน
 6. ระบบส่ง OTP ผ่าน Email
